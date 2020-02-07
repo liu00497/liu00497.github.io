@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/******************
+    Custom Styles
+******************/
+/*Mobile view first*/
+
+/*bg colour of the site*/
+body {
+	background-color: #f7f7ff;
+	margin: 0 auto;
+	overflow-x: hidden; /*gets rid of the horizontal side scroll*/
+}
+* {box-sizing: border-box;}
+/*Changing the fonts of h1*/
+h1 {
+	color: #333131;
+	padding: 1rem;
+	font-family: "montserrat black", sans-serif;
+	font-size: 4rem;
+}
+h2 {
+	font-family: "montserrat black", sans-serif;
+	color: #333131;
+}
+.contact-form h2 {
+	font-size: 2rem;
+	padding: 3rem;
+}
+p {
+	padding: 0 .5em 5px 0; /*Top right bottom left*/
+	font-family: montserrat, sans-serif;
+}
+.tagline {
+	font-size: 1.2rem;
+	font-family: sans-serif;
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+.submit {
+	font-family: montserrat, sans-serif;
+	font-size: 1.5rem;
+	border: none;
+	border-radius: 5px;
+	color: #333131;
+	background-color: #57eeab;
+	padding: .5em 1em .5em 1em; /*top right bottom left*/
+	width: 100%;
+}
+/*When the "drive with us" is hovered, the cursor becomes a pointer*/
+.submit:hover {
+	cursor: pointer;
+}
+#submit {
+	text-align: center;
+	padding: 1em;
+}
+/*styles of the calculate button*/
+.calculate {
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+	font-family: montserrat, sans-serif;
+	font-size: 1em;
+	padding: 2px 10px 2px 10px; /*top right bottom left*/
+	color: white;
+	background-color: #ff8e80;
+	border-radius: 5px;
+}
+/*when calculate is hovered, the button becomes a darker colour, and the cursor is a pointer*/
+.calculate:hover {
+	cursor: pointer;
+	background-color: salmon;
+}
+
+#calculate {
+	padding: 1em;
+	text-align: center;
+}
+/*general style of the contact form. */
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1em;
+	border-radius: 10px;
+	background-color: white;
+	font-family: montserrat, sans-serif;
+	width: 80%;
+	box-shadow: 5px 10px #888888;
+	align-items: center;
+}
+footer {
+	padding: 2em;
+    background-color: #fffd8c;
+}
+#fb{
+	border-radius: 50%; /*makes the facebook icon into a circle*/
+}
+.icons { /*moves the icons to the very right of the screen*/
+	padding: 1em;
+	justify-content: space-around;
+}
+/*****
+Desktop view*/
+@media screen and (min-width: 960px) {
+	.scooter { /*gets rid of the bg that was written in the html*/
+	display: none;
+	}
+.top-body {
+		background-image: url(images/bg-image/scooter.svg);
+		background-repeat: no-repeat;
+		background-size: 50%; /*meant to scale down the svg*/
+		width: 2000px;
+		height: 900px;
+	}
+	/* I deleted the svg from html, and brought it into CSS, so I could resize it in desktop view. However,
+	the .top-body does not work*/
+ .calculator {
+	 display: flex; /*puts the calculate button beside the city drop-down*/
+ }
+ /*moves icons to the very right*/
+ .icons {
+	 display: flex;
+	 justify-content: flex-end;
+ }
+ /*moves the contact form to the right, and up*/
+ .contact-form {
+	 position: absolute;
+	 left: 910px;
+	 top: 200px;
+	 width: 40%;
+ }
+
+}
