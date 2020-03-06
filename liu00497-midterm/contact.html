@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+<header class="site-header"> <!--This is the nav bar-->
+    
+        <a href="index.html" class="logo">ARC</a> <!--when the "logo" is clicked, user wil be redirected to the Homepage
+        
+        In this case, the logo is a hyperlink-->
+        <div class="nav">
+        <ul class="menu">
+            <li><a href="index.html.html">Home</a></li>
+            <li><a href="about.html">About</a></li> <!--The other two pages on the website at "About" and "Contact-->
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</header> <!--end of nav-->
+
+<!--intro-->
+
+<div class="border">
+ <div class="top"></div>
+<div class="intro">
+    <h1>We Want to Hear From You</h1>
+<p>If you have an idea for an activity that you and your fellow students would love to participate in that we are not already offering, we want to know about it!</p>
+</div>
+
+
+<!--This is the contact form of the landing page. In here, the user will input their name, last name, email, and phone number.-->
+
+<div class="contact-form">
+  <form action="/action_page.php">
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name">
+
+        <!--phone number must be inserted here-->
+        <label for="studentno">Student Number</label>
+        <input type="number" id="studentno" name="studentno" placehodler="Student number">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="doej0034@algonquinlive.com">
+    <label for="message">Message 
+    <textarea name="message" id="message"
+    placeholder="Write a Message!">
+</textarea>
+<button type="submit">Submit</button>
+</form>
+</div>
+</div> <!--end of top-->
+
+</div> <!--end of border-->
+<div class="location">
+    <div class="map-text">
+    <h1>Our Location</h1>
+    <h2>Algonquin College Student's Association</h2>
+    <p>Monday to Friday - 8:30 am to 6:00pm</p>
+    <p>1385 Woodroffe Avenue (E114)</p>
+    <p>Ottawa, Ontario</p>
+    <p>K2G 1V8</p>
+    <p>(613) 727 x7711</p>
+    </div> <!--end of map-->
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.039149426826!2d-75.75911148457398!3d45.348021979099826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College!5e0!3m2!1sen!2sca!4v1583457084870!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+</div>
+</body>
+<footer>
+    <div class="social"></div>
+    <p>Follow Us</p>
+<img src="icons/facebook.svg" class="fb" alt="facebook">
+<img src="icons/instagram.svg" class="insta" alt="instagram">
+<img src="icons/twitter.svg" class="twitter" alt="twitter">
+<img src="icons/youtube.svg" class="yt" alt="youtube">
+</div> <!-- end of .social-->
+</footer>

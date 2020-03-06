@@ -1,0 +1,335 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/****************************
+ Custom CSS *****************/
+
+/**************************
+		Desktop View*/
+body {
+	box-sizing: border-box;
+	background-color: white;
+	max-width: 100%;
+	font-family: 'Raleway', sans-serif
+}
+
+.site-header{ /*This is the nav. The bg is grey, and the hyperlinks are white*/
+	background-color: #3c3b3a;
+	padding: 1rem; /*increases nav bg*/
+}
+
+.site-header a {
+color: #f2f2f2;
+text-decoration: none;
+padding: 0 10px 0 0; /* adds some space between the li a to make it easier to read by separating them more*/
+}
+.nav {
+	display: flex;  /*sets all li a elements in site-header to beside to each other*/
+	justify-content: flex-end; /*moves the li a to the right side of the viewport*/
+	
+}
+
+li a{
+	display: inline-block;
+
+}
+.site-header li /*The hrefs will now be next to each other instead one being listed vertically.*/ {
+	display: inline;
+}
+.site-header a:hover{
+	color: grey;
+}
+/******************
+Container 1, also known as "top"*/
+.btn {
+padding: 10px 2rem 10px 2rem; /*size of btn*/
+ background-color: #26a682;
+ color: #f2f2f2;
+ border-style: solid;
+ border-color: transparent;
+ border-radius: 35px;
+ font-weight: bold;
+ font-size: 2rem;
+ cursor: pointer;
+ box-shadow: 0px 4px 10px rgba(0, 0, 0, .6);
+
+transition: all 0.40s ease; /*buttom starts expanding. it takes .4s This occurs when the page is visited, or refreshed*/
+}
+.btn:hover {
+	background-color: green;
+	transform: translateY(7px);
+}
+.icon a{
+	display: flex;
+	color: #26A682;
+	text-decoration: none;
+	flex-direction: row;
+	font-size: 1.2rem;
+}
+.icon a:hover{
+	color: green;
+}
+.icons {
+text-align: center; /*the icons are now in the middle of the text*/
+display: flex;
+height: 1rem; /*setting the icon container's flex space*/
+width: 30rem;
+justify-content: space-around; /*The icons are spaced apart in the container called "icons". This prevents this from overlapping one another. */
+margin: 0 0 3rem 0;/*top right bottom left*/ /*Spacing between all elements*/
+}
+
+.top h1{
+	font-size: 5rem;
+	margin: 0 0 3rem 0;/*top right bottom left*/
+}
+.top p {
+	font-size: 2rem;
+	margin: 0 0 3rem 0;/*top right bottom left*/
+	display: flex;
+	width: 40rem; /*forces the subheading to be contained in a small area.*/
+}
+.top { /*This is the general margins for everything under side-header(nav)*/
+	margin: 7rem 5rem 7rem 5rem; /*top right bottom left*/
+}
+
+/*Scaling thr SVG "discover" smaller, and adjusting the postion accordingly. At first, I used flexbox, but instead used this methoc, since it does not interfere with the btn.*/
+#discover {
+	position: absolute;
+	right: 3rem;
+	top: 3rem;
+	width: 70%;
+	height: 90%
+}
+.icon:hover {
+	transform: rotateY(2turn);
+	transition: 1s;
+}
+
+/**************
+End of Container 1 (.top)
+*************************/
+
+
+/**************
+container 2 begins here (.container)
+************/
+.container  { /* I switched to CSS grid for practising*/
+	display: grid;
+	display: flex;
+	background-color: #f2f2f2;
+	height: 20rem;
+
+
+}
+h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.container-elements{
+	display: flex;
+width: 100%;
+margin: 3rem;
+}
+/* having .d2 within .container-elements, the block of text will remain beside the image (in the html).*/
+.d2 h2 {
+ font-style: italic;
+ line-height: 1rem;
+
+}
+.d2 {
+	line-height: 1.5rem;
+	margin: 1rem;
+	
+}
+.d2 h3 {
+	color: #26A682;
+}
+.container-elements img { /*scaling down the "school" img*/
+	height: 100%;
+	width: 40%;
+	margin: 0 3rem 0 3rem;
+}
+.container-2 {
+	display: flex; /*all the content now follows Simon's profile horrizontally*/
+	width: 100%;
+	background-color: #3C3B3A;
+	color: #f2f2f2;
+	padding: 1rem 0 1rem 0;
+	align-items: center;
+
+
+}
+.simon {
+	width: 6%; /*resizing the img of simon*/
+	height: auto;
+	border-radius: 50%; /*giving a circular border for simon's image*/
+	border: 8px solid white;
+	padding: .5rem;
+	margin: 0 3rem 0 6rem;
+	/**now going to add a swing to simon's image, because it seems fun*/
+	animation: swing; animation-duration: 2s;
+	animation-delay: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+}
+/* we will now add the keyframed for the animation*/
+@keyframes swing {
+	0%, 100% { 
+		transform-origin: 0 0px; 
+	  }
+	  
+	  0% { 
+		transform: rotate(30deg);  /*at the start of the animation, it will start from the bottom and go upward*/
+	  }
+	  
+	  100% { 
+		transform: rotate(-20deg); /*At the end of the animation, it will be rotated at -20deg, meaning upwards*/
+	  }
+	
+
+}
+.simonquote{ 
+	width: 50rem;
+	color: #F2F2F2;
+	line-height: 2rem;
+	padding: 1rem;
+}
+
+.ent {
+	height: 18rem; /*resizes the entertainment image*/
+	width: 35rem;
+}
+.entertainment {
+	margin: 3rem 6rem 3rem 6rem;
+}
+
+.entertainment h3 {
+	color: #26a682;
+}
+.entertainment h2 {
+	font-style: italic;
+	line-height: 2rem;
+}
+.ent {
+	width: 40%;
+	margin: 3rem 6rem 3rem 0;
+	
+} 
+footer {
+	background-color: #3C3B3A;
+	width: 100%;
+	height: 7rem;
+}
+.btn2 {
+	padding: 5px 1rem 5px 1rem; /*size of btn*/
+	 background-color: #26a682;
+	 color: #f2f2f2;
+	 border-style: solid;
+	 border-color: transparent;
+	 border-radius: 35px;
+	 font-weight: bold;
+	 font-size: 1.3rem;
+	 cursor: pointer;
+	 box-shadow: 0px 4px 10px rgba(0, 0, 0, .6);
+}
+footer {
+	background-color: #3C3B3A;
+	width: 100%;
+	height: 7rem;
+    color: #f2f2f2;
+    text-align: center;
+}
+#discover:hover {
+	transform: rotateY(2turn);
+	transition: transform 1s;
+}
+/***************************************************
+				Mobile View
+***************************************************/
+@media screen and (max-width:600px) {
+	body{
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	#discover {
+		width: 300px;
+		position: absolute;
+		bottom: 20rem;
+	}
+	.top h1 {
+		font-size: 4rem;
+		width: 20%;
+		margin: 0 0 10rem;
+	}
+	.top {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 10%;
+	}
+	.top p {
+		font-size: 1rem;
+		display: flex;
+
+	}
+	.container-elements {
+		margin: 0; /* Expands the image to fit the whole screen*/
+	}
+	.container-elements img {
+		width: 100%;
+		margin: 0;
+	}
+	.d2 {
+		display: block;
+	}
+
+.simon img {
+	height: 60px;
+}
+}

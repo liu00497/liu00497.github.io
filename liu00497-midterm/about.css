@@ -1,0 +1,277 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/****************************
+ Custom CSS *****************/
+ html {
+	 scroll-behavior: smooth;
+ }
+body {
+	background-color: white;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden; /*The SVGs create a horizontal scroll*/
+}
+h2 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+div h3 {
+    font-size: 1.3rem;
+	font-weight: bold;
+    color: #26a682;
+    font-family: 'Raleway';
+}
+h1{
+    font-family: sans-serif;
+	font-size: 5rem;
+    margin: 0 0 3rem 0;/*top right bottom left*/
+}
+.top p {
+	font-size: 1.5rem;
+	margin: 0 0 3rem 0;/*top right bottom left*/
+	width: 50%; /*forces the subheading to be contained in a small area.*/
+}
+.top { /*This is the general margins for everything under side-header(nav)*/
+	margin: 7rem 5rem 7rem 5rem; /*top right bottom left*/
+}
+.site-header{ /*This is the nav. The bg is grey, and the hyperlinks are white*/
+	background-color: #3c3b3a;
+	padding: 1rem; /*increases nav bg*/
+}
+
+.site-header a {
+color: #f2f2f2;
+text-decoration: none;
+padding: 0 10px 0 0; /* adds some space between the li a to make it easier to read by separating them more*/
+}
+.nav {
+	display: flex;  /*sets all li a elements in site-header to beside to each other*/
+	justify-content: flex-end; /*moves the li a to the right side of the viewport*/
+	
+}
+
+li a{
+	display: inline-block;
+
+}
+.site-header li /*The hrefs will now be next to each other instead one being listed vertically.*/ {
+	display: inline;
+}
+.site-header a:hover {
+    color: grey;
+}
+
+#construction {
+	position: absolute;
+	right: 3rem;
+	top: 7rem;
+	width: 40rem; /*custom placement.*/
+}
+#construction:hover {
+	transform: rotateY(2turn);
+	transition: transform 1s;
+}
+
+.about {
+    width: 100%; /*I cropped the about banner in photoshop, and had it stop overflowing*/
+    margin: 5rem 5rem 0 0;
+   
+}
+
+.three-ws div{ /*Each div of text is now written in a column*/
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    line-height: 2rem;
+}
+.three-ws { /*The columns are space beside each other*/
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem; /** The margins on the sides of the page is 6rem*/
+    /*This adds spacing between the 3 ws as*/
+}
+#services {
+    width: 100%;
+    margin: 5rem 0 5rem 0;
+}
+
+#bar {
+    width: 40rem;
+    height: 20rem;
+}
+.container1 { /*This is the container that contains bar*/
+	height: 18rem; /*resizes the entertainment image*/
+	margin: 3rem 6rem 3rem 6rem;
+	display: flex;
+}
+.b-text {
+    margin: 0 0 0 3rem;
+}
+#bowling {
+    width: 40rem;
+    height: 20rem;
+}
+.comp-container {
+    display: flex;
+    flex-direction: row-reverse; /*switching places for of the text & bowling img*/
+    background-color: #f2f2f2;
+}
+.comp-text {
+    margin: 3rem 3rem 3rem 6rem;
+}
+.comp-container img {
+    margin: 3rem 6rem 3rem 0;
+} /*I realized I have been writing this line too often*/
+
+p {
+    line-height: 2rem; /*I found myself re-writing this line too often, so I finally added line height to all the p tags*/
+}
+.btn {
+	padding: 5px 1rem 5px 1rem; /*size of btn*/
+	 background-color: #26a682;
+	 color: #f2f2f2;
+	 border-style: solid;
+	 border-color: transparent;
+	 border-radius: 35px;
+	 font-weight: bold;
+	 font-size: 1.3rem;
+	 cursor: pointer;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, .6);
+     padding: 0 2rem 0 2rem;
+}
+.btn:hover {
+	background-color: green;
+    transform: translateY(7px);
+    transition: 1s;
+}
+.subscribe {
+    background-color: #3c3b3a; /*This is the subscribe banner around mid-page.*/
+    color: #f2f2f2;
+    display: flex;
+    text-align: center;
+    padding: 1.5rem;
+    justify-content: space-around;
+}
+#fitness {
+    width: 40rem;
+    height: 20rem;
+}
+.container-ny {
+    height: 18rem;
+	margin: 3rem 6rem 3rem 6rem; /*margins for this container*/
+	display: flex; /* content is now beside each other*/
+}
+.ny-text {
+    margin: 0 0 0 3rem;
+}
+
+.climb-container {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #f2f2f2;
+}
+.climb-text {
+    margin: 3rem 3rem 3rem 6rem;
+}
+.climb-container img {
+    margin: 3rem 6rem 3rem 0;
+}
+#climbing {
+    width: 40rem;
+    height: 20rem;
+}
+#sa, /*resizing the sponsor logos*/
+#ac,
+#pcl,
+#cibc {
+    width: 10%;
+}
+#sa { /*adjusting size accordingly*/
+    width: 25%;
+}
+#cibc {
+    width: 8%;
+}
+.sponsors { /*container for logos*/
+    width: 80%;
+    margin: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+#ty {
+    text-align: center;
+    margin: 3rem;
+    width: 80%;
+}
+footer {
+	background-color: #3C3B3A;
+	width: 100%;
+	height: 7rem;
+    color: #f2f2f2;
+    text-align: center;
+}
+/**************************
+        Mobile View
+**************************/
+@media screen and (max-width: 600px) {
+    section h1{
+        font-size: 2rem;
+    }
+    #construction img {
+        width: 50%;
+    }
+}
+
+/*************************************
+        Tablet view
+**************************************/
+@media screen and (min-width: 700px) {
+    #construction img {
+        width: 80%;
+    }
+}
