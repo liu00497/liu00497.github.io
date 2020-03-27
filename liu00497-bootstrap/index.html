@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Bootstrap This!</title>
+</head>
+<body>
+    
+<nav class="navbar
+    navbar-expand-sm
+    bg-dark
+    navbar-dark
+    fixed-top">
+
+<a href="#" class="navbar-brand ">Bootstrap</a>
+<button class="navbar-toggler"
+ data-toggle="collapse"
+ data-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+<div class="navbar-collapse"></div>
+</button>
+
+<div id="navbarNav" class="collapse navbar-collapse">
+<div class="ml-auto navbar-nav">
+<a href="#" class="nav-link active">About</a>F
+<a href="#" class="nav-link">Contact</a>
+</div>
+</nav>
+<!-----------------------------------------------------
+Mobile View
+--------------------------------------------------------->
+<section class="jumbotron">
+    <h1>Bootstrap This!</h1>
+    <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+    <a class="btn btn-primary btn-xl text-light"> Learn More
+    </a>
+    </section> <!--End of Jumbotron-->
+</section>
+
+<div class="column">
+    <div class="container">
+      <div class="row"> <!--each of these elements will take up 12 columns. I chose to do this, because I want them on a single line each. There will be a lot of content, so the space is necessary for each "section"-->
+          <div class="col-12">
+            <h2>Bootstrap Documentation</h3>
+          </div><!--end of Documentation-->
+          <div class="col-12">
+              <h3>Colours</h3>
+              <p>Convey meaning through color with a handful of color utility classes. Includes support for styling links with hover states too.</p>
+              <h4>Examples</h4>
+              <br>
+              <ul class=list-group-sm> <!--examples of bootstrap colours examples-->
+              <li class="list-group-item text-primary">text-primary (blue)</li>
+              <li class="list-group-item text-success">text-success (green)</li>
+              <li class="list-group-item text-danger"> text-danger (red)</li>
+              <li class="list-group-item text-secondary">text-secondary (grey)</li>
+              <li class="list-group-item text-info">text-info (teal)</li>
+            </ul> <!--end of example-->
+            <h5>More about this can be found here:</h5>
+              <a href>https://getbootstrap.com/docs/4.0/utilities/colors/</a>
+            </div><!--end of Colours-->
+            <br>
+            <div class="col-12">
+            <h3>Spacing</h3>
+            <p>Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an element’s appearance.Assign responsive-friendly margin or padding values to an element or a subset of its sides with shorthand classes. Includes support for individual properties, all properties, and vertical and horizontal properties. Classes are built from a default Sass map ranging from .25rem to 3rem.
+            </p>
+            <h5>More about this can be found here:</h5>
+            <a href>https://getbootstrap.com/docs/4.4/utilities/spacing/</a>
+          </div>
+          
+          <div class="col-12">
+              <h3>Layout/Containers</h3>
+                <p>Components and options for laying out your Bootstrap project, including wrapping containers, a powerful grid system, a flexiple media object, and responsive utility classes. Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Choose from a responsive, fixed-width, container (meaning its max-width changed at each breakpoint) or fluid width 9meaning it's 100% wide all the time). Can be nested, but most layouts do not require a nested container.</p>  
+                <br>
+                <p>To control how many columns (bootstrap has a total of 12 columns on a page), simply write col-# of columns.</p>           
+            </div>
+
+            <div class="col-12">
+              <h3>Mobile First</h3>
+                <p>Bootstrap includes a powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>              
+            </div>
+
+            <div class="col-12">
+              <h3>Components Library</h3>
+                <p>Bootstrap comes with an extensive components library that includes buttons and lists to carousels and modals. Components are easy to integrate into any site and require no knowledge of JavaScript to use.</p>              
+            </div>
+
+            <div class="col-12">
+              <h3>Components</h3>
+                <p>Bootstrap comes with nearly two dozen components that are ready to use right out of the box.</p>              
+            </div>
+
+            <div class="col-12">
+              <h3>Alerts</h3>
+                <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>              
+            </div>
+
+            <div class="col-12">
+              <h3>Breadcrumbs</h3>
+                <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>              
+            </div>
+
+            <div class="col-6">
+              <h3>List Group</h3>
+                <p>List groups are a flexible and powerful component for displaying a series of content.</p>              
+            </div>
+    </div> <!--end of row-->
+    <br>
+    <div class="row-2">
+      <div class="row">
+
+        <div class="col-md">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/boots.png" alt="Boots">
+            <div class="card-body">
+              <h5 class="card-title">Boots</h5>
+              <p class="card-text">Boots.</p>
+              <a href="#" class="btn btn-primary">Boots</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md"> <!--will be beside the boots.png in desktop view, but on a single row in mobile view-->
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/strap.png" alt="Boot Straps">
+              <div class="card-body">
+                <h5 class="card-title">Boot Straps</h5>
+                <p class="card-text">Boot Straps.</p>
+                <a href="#" class="btn btn-primary">Boot Straps</a>
+              </div><!--end of body-->
+            </div> <!--end of second picture-->
+          <br>
+          <div class="why-6"> <!-- under the photos will state why Bootstrap is useful-->
+        </div><!--end of row-->
+    </div> <!--end of row-2-->
+    <br>
+
+    <!-- Note, showing alert-danger-->
+    <div class="alert alert-danger">
+      <p>NOTE: (This is alert-danger) This is the the halfway checkpoint to the end of the website</p>
+    </div><!--end of alert-->
+    <br>
+    </div><!-- end of row-->
+<!-------------------------------------------------------------------------------------------------------Halfway----------------------------------------->
+    <div class="badge">
+      <div class="row">
+      <div class="col-12">
+     <h1>Badge Example <span class="badge badge-secondary">Badge</h1>
+      </div>
+
+      <div class="col-md">
+        <button type="button" class="btn btn-warning btn-outline-success">
+          Badge Example <span class="badge badge-light">Hey!</span>
+        </button>
+         </div>
+
+         <div class="col-md">
+          <h2>Badge Example <span class="badge badge-pill badge-info ">Badge</h2>
+           </div>
+
+           <div class="col-md">
+            <a href="#" class="badge badge-danger">Link Badge</a>
+            </div>
+        </div><!--END OF ROW-->
+        <h5>More about this can be found here:</h5>
+            <a href>https://getbootstrap.com/docs/4.0/components/badge/</a>
+
+       
+    </div> <!--end of badge-->
+  
+    <div class="badge-i">
+      <div class="col-12">
+        <br>
+      <p>Documentation and examples for badges, our small count and labeling component. Badges scale to match the size of the immediate parent element by using relative font sizing and em units.
+       Badges can be used as part of links or buttons to provide a counter.
+       Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies. While the styling of badges provides a visual cue as to their purpose, these users will simply be presented with the content of the badge. Depending on the specific situation, these badges may seem like random additional words or numbers at the end of a sentence, link, or button.
+
+      Unless the context is clear (as with the “Notifications” example, where it is understood that the “4” is the number of notifications), consider including additional context with a visually hidden piece of additional text.
+      </p>
+    </div><!--end or col for badge-i-->
+    </div><!-- end of badge-i-->
+  
+    <div class="btngroup">
+      <div class="row">
+        <div class="col-6">
+        <h3> Button group</h3>
+        <p>Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.</p></div>
+        
+        <div class="col col-6">
+        <h3>Basic Example</h3>
+        <p>Wrap a series of buttons with .btn in .btn-group. Add on optional JavaScript radio and checkbox style behavior with our buttons plugin. </p> </div>
+
+          <!-----example of the group of buttons-->
+        <div class="btn-group btn-group-lg btn-group  col-md-12" role="group">
+          <!--expands the buttons (vertical and horizontal) to fill up the whole page/-->
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+        </div>
+
+        
+      </div><!--end of row for btngroup-->
+      <div class="alert alert-danger">
+        <p>NOTE: (This is alert-danger) Approaching the end of the website.</p>
+      </div><!--end of alert-->
+
+    </div><!--end of btn group-->
+
+    <div class="opinion">
+      <div class="row">
+        <div class="text">
+        <h3>My Opinion on Bootstrap</h3>
+        
+        <p> By linking a website to a Boostrap server, you are given access to their library of presets (which are customizable). It saves the time from manually implementing things into CSS, such as hover states. Using this is especially useful for government sites, as ones only needs basic knowledge of HTML & CSS to use it. I like it because it is convenient.</p>
+      </div>
+
+      </div><!-- end of row-->
+    </div> <!--end of opinion-->
+
+    </div><!-- end of container-->
+    </div> <!-- end of column-->
+
+
+</body>
+</html>
