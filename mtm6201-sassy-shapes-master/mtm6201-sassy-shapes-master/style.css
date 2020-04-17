@@ -1,0 +1,156 @@
+/**********************************************
+ * STARTER CODE
+ **********************************************/
+.shapes, .square-red, .square-blue, .square-green, .square-purple, .square-orange, .circle-red, .circle-blue, .circle-green, .circle-purple, .circle-orange, .pentagon-red, .pentagon-blue, .pentagon-green, .pentagon-purple, .pentagon-orange {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 50px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circle-red, .circle-blue, .circle-green, .circle-purple, .circle-orange, .square-red, .square-blue, .square-green, .square-purple, .square-orange {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+.circle-red, .circle-blue, .circle-green, .circle-purple, .circle-orange {
+  border-radius: 50%;
+  background-color: black;
+}
+
+.pentagon-red, .pentagon-blue, .pentagon-green, .pentagon-purple, .pentagon-orange {
+  position: relative;
+  width: 54px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: black transparent;
+}
+
+.pentagon-red::before, .pentagon-blue::before, .pentagon-green::before, .pentagon-purple::before, .pentagon-orange::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent black;
+}
+
+/**********************************************
+ * YOUR CODE BELOW
+ **********************************************/
+.square-red {
+  /*@extend .shapes; /*alling the variables from above*/
+  background-color: red;
+}
+
+.square-blue {
+  /*@extend .shapes; /*alling the variables from above*/
+  background-color: blue;
+}
+
+.square-green {
+  /*@extend .shapes; /*alling the variables from above*/
+  background-color: green;
+}
+
+.square-purple {
+  /*@extend .shapes; /*alling the variables from above*/
+  background-color: purple;
+}
+
+.square-orange {
+  /*@extend .shapes; /*alling the variables from above*/
+  background-color: orange;
+}
+
+.circle-red {
+  /*@extend .shapes; /*alling the variables from above*/
+  background-color: red;
+}
+
+.circle-blue {
+  /*@extend .shapes; /*alling the variables from above*/
+  background-color: blue;
+}
+
+.circle-green {
+  /*@extend .shapes; /*alling the variables from above*/
+  background-color: green;
+}
+
+.circle-purple {
+  /*@extend .shapes; /*alling the variables from above*/
+  background-color: purple;
+}
+
+.circle-orange {
+  /*@extend .shapes; /*alling the variables from above*/
+  background-color: orange;
+}
+
+.pentagon-red {
+  /*@extend .shapes; /*alling the variables from above*/
+  background-color: red;
+  border-color: red transparent;
+  /*the pentagon was black. now it is completely coloured*/
+}
+
+.pentagon-red::before {
+  border-color: transparent transparent red;
+}
+
+.pentagon-blue {
+  /*@extend .shapes; /*alling the variables from above*/
+  background-color: blue;
+  border-color: blue transparent;
+  /*the pentagon was black. now it is completely coloured*/
+}
+
+.pentagon-blue::before {
+  border-color: transparent transparent blue;
+}
+
+.pentagon-green {
+  /*@extend .shapes; /*alling the variables from above*/
+  background-color: green;
+  border-color: green transparent;
+  /*the pentagon was black. now it is completely coloured*/
+}
+
+.pentagon-green::before {
+  border-color: transparent transparent green;
+}
+
+.pentagon-purple {
+  /*@extend .shapes; /*alling the variables from above*/
+  background-color: purple;
+  border-color: purple transparent;
+  /*the pentagon was black. now it is completely coloured*/
+}
+
+.pentagon-purple::before {
+  border-color: transparent transparent purple;
+}
+
+.pentagon-orange {
+  /*@extend .shapes; /*alling the variables from above*/
+  background-color: orange;
+  border-color: orange transparent;
+  /*the pentagon was black. now it is completely coloured*/
+}
+
+.pentagon-orange::before {
+  border-color: transparent transparent orange;
+}
+/*# sourceMappingURL=style.css.map */

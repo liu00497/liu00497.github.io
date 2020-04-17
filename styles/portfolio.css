@@ -1,0 +1,199 @@
+/**********************************
+        Customer Styles
+***********************************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Impact, "Arial Narrow Bold", sans-serif
+}
+body{
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    font-family: Impact, "Arial Narrow Bold", sans-serif;
+}
+.site-header {
+    background-color: #0e1014;
+    box-shadow: 1px 1px 1px 0 black;
+    opacity: 0.9;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+.site-header ul{
+    list-style: none; /*bullets are gone*/
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .8;
+    overflow: hidden; /*Anything overflowing is hidden
+                        When the hamburger is inactive, it's hidden*/
+    }
+.site-header ul a { /*Anchor tags by default are inline.
+                    Set to block elements so that
+                    only works when hovering the obj*/
+                    /*Now must be exactly on the words to click*/
+display: block;
+padding: 20px;
+text-decoration: none;
+cursor: pointer;
+
+}
+.site-header .logo {
+    text-align: center;
+    font-family: impact;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 2em;
+    padding: 10px 20px;
+    z-index: 4;
+}
+.site-header ul a:hover {
+    background-color: black;
+}
+.site-header .menu {
+    clear: both;
+    max-height: 0;
+    transition:max-height .1s ease-out;
+}
+
+.siteheader .menu-icon {
+    padding: 30px 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.site-header .menu-icon .nav-icon {
+    background: white;
+    display: block;
+    width: 25px;
+    height: 3px;
+    position: relative;
+    float: right; /*This bar will become
+                 3-line a hamburger*/
+    
+
+}
+/** Now we will add the top and bottom of the hamburger**/
+
+.site-header .menu-icon .nav-icon:before {
+    display: block;
+    position: absolute;
+    background: white;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 5px;
+    transition: all .1.5s ease-out;
+}
+.site-header .menu-icon .nav-icon:after { /*Above the origan by 5px*/
+    display: block;
+    background: white;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    transition: all .1.5s ease-out;
+}
+/*Two pseudo elements were used to make the hamburger*/
+.site-header .menu-btn {
+    display: none; /*checkbox invisible*/
+}
+a {
+    color:white;
+}
+
+.site-header .menu-btn:checked ~ .menu {
+    max-height: 20em;
+}
+.info {
+    background-color: white;
+    height: 2em;
+    width: 100%;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5em;
+    opacity: 0.8;
+    background-color: #0e1014;
+    font-family: impact, Arial;
+    color: white;
+    text-align: center;
+}
+img {
+    margin: 0 auto;
+}
+.banner img{
+    width: 100%;
+    padding: 0px;
+}
+.banner h1 {
+    color: white;
+    z-index: 2;
+    width: 10%;
+    display: block;
+    text-align: center;
+    padding: 5%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+h2 {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.winner {
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    font-family: impact;
+}
+.top-btn {
+    float: right;
+    padding: 0px 30px 50px 50px;
+}
+#about {
+    padding: 10px;
+    color: lightgrey;
+    font-family: Arial;
+}
+.presidentphoto{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+/*************************
+        Tablet View
+*************************/
+@media screen and(min-width: 768px) {
+  
+    .container{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 33%;
+    }
+
+}
+/***************************
+        Desktop View
+***************************/
+@media screen and (min-width:1100px) {
+.index-row ,
+.index-row2{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 33.33%;
+}
+.banner img{
+    width: 100%;
+    display: block;
+}
+}

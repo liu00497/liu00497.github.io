@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/reset.css"> <!--Meyer's Reset-->
     <title>Emily Liu</title>
 </head>
@@ -24,18 +24,37 @@
 
  <div class="container">
 <section class="left">
-    <h1>Emily Liu</h1>
-    <h2>Web Designer/</h2>
-    <h2>Visual Designer</h2>
+    <h1>Contact Me</h1>
+    <h3>If you have any questions about my services or just
+        want to drop by and say hello,
+        feel free to contact me.</h3>
    
 </section> <!-- end of left-->
 
 <section class="right">
-    <h3>Portfolio</h3>
-        <img src="images/rocket.png" class="rocket">
-            <button class="button">
-                Launch
-            </button>
+    <form class="form" action="/action_page.php">
+        <h2>Get in Touch</h2>
+ <div class="row">
+ <fieldset>
+            <input type="text"
+            placeholder="Your name here..."
+            id="name">
+        </input>
+</fieldset>
+<fieldset>
+        <input type="text"
+        placeholder="Your Email..."
+        id="email">
+    </input>
+</fieldset>
+<fieldset>
+        <input type="text"
+        placeholder="Enter message..."
+        id="message">
+    </input>
+</fieldset>
+        <button>Send Message</button>
+      </form>
 </section> <!-- end of right-->
 
 </div><!--end of container-->
