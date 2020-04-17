@@ -4,7 +4,9 @@ Michael Eisunbum
 16 April 2020
 -----------------
 Summary:
-I broke down the website into sections. Left, Right, and Bottom.
+This website is minimalistic.
+I broke down the website into sections. Left, Right, and Bottom. It was easier for me
+imagene that for this.
 I created my website using Flexbox. No other libraries or plugins were used.
 Through this assignment, I unlearned some of my habits from previous assignments.
 I used MARGIN excessively, which created a custom position. This made it
@@ -16,7 +18,6 @@ custom position, because it's convenient when it's always in sight.
 
 I omitted the ABOUT intro, because it didn't have a strong purpose. Therefore,
 there is only one ABOUT page.
-
 
 Challenge #1:
 I had difficulty using the picture element to show the image. The layout was also
@@ -33,11 +34,14 @@ Some text was deleted to get rid of the irregular grid.
 
 Challenge #2:
 I had trouble making the layout. It wouldn't go in the spots I wanted it to.
+The footer would be in the middle of the page for some reason.
 
 Solution #2:
-I had to built the website horizontally. However, I couldn't figure out
+I had to build the website horizontally. for the upper portion. However, I couldn't figure out
 how to make the right side of the ABOUT page vertical. When I did,
 the icons disappeared.
+
+Also, I had to get rid of some divs and make sure other selectors did nott have unneccessary margins and padding.
 
 Challenge #3: Relating to previous assignments, I had major organization
 issues becauses the selectors in CSS were scattered, and a lot of things
