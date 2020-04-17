@@ -1,5 +1,7 @@
 Emily Liu
-MTM62
+MTM6201-010
+Michael Eisunbum
+16 April 2020
 -----------------
 Summary:
 I broke down the website into sections. Left, Right, and Bottom.
