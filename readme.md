@@ -58,3 +58,4 @@ Portfolio Piece #2: Replication of image provided by Algonquin College
 
 ICONS: Retrieved from ICONMONSTR
 
+Fonts: 'Yu Gothic' 'Arial'
