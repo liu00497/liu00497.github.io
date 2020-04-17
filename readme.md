@@ -6,7 +6,7 @@ Michael Eisunbum
 Summary:
 This website is minimalistic.
 I broke down the website into sections. Left, Right, and Bottom. It was easier for me
-imagene that for this.
+imagine that for this.
 I created my website using Flexbox. No other libraries or plugins were used.
 Through this assignment, I unlearned some of my habits from previous assignments.
 I used MARGIN excessively, which created a custom position. This made it
